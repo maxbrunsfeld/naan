@@ -1,27 +1,117 @@
 <head>
-  <link type="text/css" rel="stylesheet" href="stylesheets/960.css"/>
+  <!--<link type="text/css" rel="stylesheet" href="stylesheets/960.css"/>-->
   <link type="text/css" rel="stylesheet" href="stylesheets/reset.css"/>
   <link type="text/css" rel="stylesheet" href="stylesheets/naan.css"/>
   <title>Naan of the Above</title>
 
   <script type="text/javascript" src="script/jquery-1.4.2.min.js"></script>
   <script type="text/javascript" src="script/jquery.cross-slide.min.js"></script>
-  <script type="text/javascript" src="script/naan.js"></script>
+  <script type="text/javascript" src="script/slideshow.js"></script>
+  <script type="text/javascript" src="script/navigation.js"></script>
 </head>
 
-<body class="container12">
+<body>
 
 <div id="content" class="container12">
-  <div id="leftColumn" class="grid6">
-    <div id="slideshow">
-    </div>
+
+  <div id="header">
+    <img id="logo" src="images/logo.png" alt="Naan of the Above"/>
+    <div id="slideShow" class="photo" style="display: none;"></div>
+    <div id="noSlideShow" class="photo"></div>
   </div>
 
-  <div id="rightColumn" class="grid6">
-    <img id="logo" src="images/logo.png" alt="Naan of the Above"/>
-  
-    <div id="hoursAndLocation" class="grid6">
-      <div id="location" class="grid3 alpha">
+  <div id="navigation">
+    <a id="newsLink" href="#news">News</a>
+    <a id="menuLink" href="#menu">Weekly Menu</a>
+    <a id="locationAndHoursLink" href="#locationAndHours">Location & Hours</a>
+    <a id="contactLink" href="#contact">Contact</a>
+    <a id="aboutLink" href="#about">About</a>
+    <a id="merchandiseLink" href="#merchandise">Merchandise</a>
+  </div>
+
+  <div id="main">
+
+    <div id="news" class="section">
+      Facebook Fan appreciation day! <br/>
+      Saturday, March 26th
+    </div>
+
+    <div id="menu" class="section">
+      <div>
+        <h2>Menu for Aug 30th&mdash; Sep 4th:</h2>
+      </div>
+
+      <div id="curries" class="subsection">
+        <h2>This week's curries</h2>
+        <dl>
+          <dt>Chana Masala  <span class="price">5.95</span></dt>
+          <dd>chickpeas in a tangy, spicy tomato and onion sauce</dd>
+
+          <dt>Palak Paneer  <span class="price">6.95</span></dt>
+          <dd>pieces of lightly fried house-made cheese in a spiced spinach cream sauce</dd>
+
+          <dt>Chicken Vindaloo  <span class="price">7.95</span></dt>
+          <dd>chicken in a hot, sweet, and sour sauce made primarily from freshly ground whole spices</dd>
+        </dl>
+      </div>
+
+      <div id="sides" class="subsection">
+        <h2>Sides</h2>
+        <dl>
+          <dt>Naan   <span class="price">2.00</span></dt>
+          <dd>North Indian leavened flatbread baked to order in the tandoori style and brushed with house-made ghee</dd>
+
+          <dt>Basmati Rice  <span class="price">1.00 / serving</span></dt>
+          <dd>fragrant Indian basmati rice steamed with spices</dd>
+
+          <dt>Potato Samosas  <span class="price">2.00 each</span></dt>
+          <dd>a tangy potato and pea mixture wrapped in pastry and fried to order, served with a sweet and sour tamarind chutney sauce</dd>
+        </dl>
+      </div>
+
+      <div id="drinks" class="subsection">
+        <h2>Specialty Drinks</h2>
+        <dl>
+          <dt>
+            Masala Chai<br/>
+            12 oz.  <span class="price">1.80</span><br/>
+            16 oz.  <span class="price">2.35</span>
+          </dt>
+          <dd>fair trade, organic black tea brewed with whole spices, milk and sugar</dd>
+
+          <dt>
+            Mango Lassi
+            Masala Chai<br/>
+            12 oz.  <span class="price">3.25</span><br/>
+            16 oz.  <span class="price">4.25</span>
+          </dt>
+          <dd>A chilled yoghurt and mango pulp drink</dd>
+        </dl>
+      </div>
+
+      <div class="clear"></div>
+    </div>
+
+    <div id="locationAndHours" class="section">
+      <div id="hours" class="subsection">
+        <h2>Hours</h2>
+        <table>
+          <tr>
+            <td> Wed &mdash; Fri </td>
+            <td> 11:30 am &mdash; 8 pm </td>
+          </tr>
+          <tr>
+            <td> Saturday </td>
+            <td> 11:30 am &mdash; 6 pm </td>
+          </tr>
+          <tr>
+            <td> Sun &mdash; Tues </td>
+            <td> Closed </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="location" class="subsection">
         <h2>Location</h2>
         <p>786 7th Street</p>
         <p>between I and H</p>
@@ -31,110 +121,29 @@
         </a>
       </div>
 
-      <div id="contact" class="grid3 omega">
+      <div class="clear"></div>
+    </div>
+
+    <div id="contact" class="section">
+      <div class="subsection">
         <h2>Contact Us</h2>
         <p>(707) 267-4832</p>
         <p><a href="mailto:alissa@naanoftheabove.com">alissa@naanoftheabove.com</a></p>
       </div>
+
+      <div id='facebook' class="subsection">
+        Our <a href="http://www.facebook.com/pages/Naan-of-the-Above/130802460281019">
+          Facebook
+        </a> fans have access to special offers!
+        <iframe src="http://www.facebook.com/plugins/like.php?href=www.naanoftheabove.com"
+          scrolling="no" frameborder="0"
+          style="border:none; width:450px; height:80px">
+        </iframe>
+      </div>
+
+      <div class="clear"></div>
     </div>
 
-    <div class="grid6">
-      <h2>Hours</h2>
-
-      <table id="hours">
-        <tr>
-          <td>
-            Monday through Thursday
-          </td>
-          <td>
-            11 am&mdash;7 pm
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Friday and Saturday
-          </td>
-          <td>
-            11 am&mdash;Midnight
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2">
-            Closed Sundays
-          </td>
-        </tr>
-      </table>
-    </div>
   </div>
-
-  <div style="clear:both"></div>
-
-  <div id="weeklyMenu">
-    <div id="weeklyMenuHeader" class="grid12">
-      <h1>Menu for this week:</h1>
-      <h2>Monday, Aug 30th&mdash;Saturday, Aug 4th</h2>
-    </div>
-
-    <div class="grid6">
-      <div id="curries" class="menuSection">
-        <h2>This week's curries</h2>
-
-        <dl>
-          <dt>Chana Masala &mdash; <span class="price">5.95</span></dt>
-          <dd>chickpeas in a tangy, spicy tomato and onion sauce</dd>
-
-          <dt>Palak Paneer &mdash; <span class="price">6.95</span></dt>
-          <dd>pieces of lightly fried house-made cheese in a spiced spinach cream sauce</dd>
-
-          <dt>Chicken Vindaloo &mdash; <span class="price">7.95</span></dt>
-          <dd>chicken in a hot, sweet, and sour sauce made primarily from freshly ground whole spices</dd>
-        </dl>
-      </div>
-
-      <div id="appetizers" class="menuSection">
-        <h2>Appetizers</h2>
-        <dl>
-          <dt>Handmade Potato Samosas &mdash; <span class="price">2.00 each</span></dt>
-          <dd>a tangy potato and pea mixture wrapped in pastry and fried-to-order, served with a sweet and sour tamarind chutney dipping sauce</dd>
-        </dl>
-      </div>
-    </div>
-
-    <div class="grid6">
-      <div id="sides" class="grid6 menuSection">
-        <h2>Sides</h2>
-        <dl>
-          <dt><span style="font-style:italic;">Naan&rsquo;s</span> Naan  &mdash; <span class="price">2.00</span></dt>
-          <dd>Naan- Northern Indian leavened flatbread baked-to-order in the tandoori style and brushed with house made ghee</dd>
-
-          <dt>Aromatic Basmati Rice &mdash; <span class="price">1.00 per serving</span></dt>
-          <dd>fragrant Indian basmati rice steamed with spices</dd>
-        </dl>
-      </div>
-      <div id="specialtyDrinks" class="grid6 menuSection">
-        <h2>Specialty Drinks</h2>
-        <dl>
-
-
-          <dt>
-            Masala Chai<br/>
-            12 oz. &mdash; <span class="price">1.80</span><br/>
-            16 oz. &mdash; <span class="price">2.35</span>
-          </dt>
-          <dd>fair trade, organic black tea brewed with whole spices, milk and sugar</dd>
-
-          <dt>
-            Mango Lassi
-            Masala Chai<br/>
-            12 oz. &mdash; <span class="price">3.25</span><br/>
-            16 oz. &mdash; <span class="price">4.25</span>
-          </dt>
-          <dd>A chilled yoghurt and mango pulp drink</dd>
-        </dl>
-      </div>
-    </div>
-  </div>
-
-  <div class="clearFloat"></div>
 </div>
 </body>
