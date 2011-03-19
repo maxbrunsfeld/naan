@@ -84,6 +84,10 @@ h2, th {
   width: 273px;
 }
 
+.subsection {
+  min-height: 150px;
+}
+
 #locationAndHours .subsection,
 #contact .subsection
 {
