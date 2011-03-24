@@ -18,6 +18,7 @@
     <img id="logo" src="images/logo.png" alt="Naan of the Above"/>
     <div id="slideShow" class="photo" style="display: none;"></div>
     <div id="noSlideShow" class="photo"></div>
+    <div class="clear"></div>
   </div>
 
   <div id="navigation">
@@ -25,15 +26,21 @@
     <a id="menuLink" href="#menu">Weekly Menu</a>
     <a id="locationAndHoursLink" href="#locationAndHours">Location & Hours</a>
     <a id="contactLink" href="#contact">Contact</a>
-    <a id="aboutLink" href="#about">About</a>
-    <a id="merchandiseLink" href="#merchandise">Merchandise</a>
+    <!--<a id="aboutLink" href="#about">About</a>-->
+    <!--<a id="merchandiseLink" href="#merchandise">Merchandise</a>-->
   </div>
 
   <div id="main">
 
     <div id="news" class="section">
-      Facebook Fan appreciation day! <br/>
-      Saturday, March 26th
+
+      <div class="subsection">
+        Facebook Fan appreciation day is Saturday, March 26th. If you have "liked" us on facebook before friday night at 9pm, you will receive a free naan with any curry purchase!
+        Here is an example: 2 fans come to <i>naan of the above</i> on Saturday, March 26th and buy two curries. They receive two free naan!
+        3 fans come to <i>naan of the above</i> on appreciation day and buy one curry between them. They receive one free naan.
+
+      </div>
+
     </div>
 
     <div id="menu" class="section">
@@ -89,15 +96,17 @@
         </dl>
       </div>
 
+
       <div class="clear"></div>
+      Phone-in orders of $20 or more are gladly accepted!
     </div>
 
     <div id="locationAndHours" class="section">
       <div id="hours" class="subsection">
         <h2>Hours</h2>
-        <table>
+        <table id="hoursTable">
           <tr>
-            <td> Wed &mdash; Fri </td>
+            <td> Wednesday &mdash; Friday </td>
             <td> 11:30 am &mdash; 8 pm </td>
           </tr>
           <tr>
@@ -105,7 +114,7 @@
             <td> 11:30 am &mdash; 6 pm </td>
           </tr>
           <tr>
-            <td> Sun &mdash; Tues </td>
+            <td> Sunday &mdash; Tuesday </td>
             <td> Closed </td>
           </tr>
         </table>

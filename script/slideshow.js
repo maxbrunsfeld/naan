@@ -22,17 +22,11 @@ $(function() {
 
   // If you want to have a different ken burns effect for a particular slide,
   // add an entry to this list. put the file name in the square brackets.
-//  kenBurnsEffects['big_naan.jpg'] = {
-//    from: '20% 20%',
-//    to: '80% 100%',
-//    time: 6
-//  };
-//  kenBurnsEffects['night_tents.jpg'] = {
-//    from: '20% 20%',
-//    to: '80% 100%',
-//    time: 6
-//  };
-
+  kenBurnsEffects['tents.jpg'] = {
+    from: '0% 20%',
+    to: '100% 100%',
+    time: 6
+  };
 
   var slides = [], effect;
   for (var i = 0, n = slideNames.length; i < n; i++) {

@@ -17,6 +17,7 @@ $(function() {
   $(window).bind('hashchange', function(event) {
     event.preventDefault();
     showCurrentSection();
+    return false;
   });
   showCurrentSection();
 });
